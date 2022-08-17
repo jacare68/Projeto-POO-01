@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,20 +8,20 @@ namespace poo_classe_com_herança
 {
     public class Professor : Pessoa
     {
-        private string titulacao;
+        private string Titulacao;
 
         public Professor()
         {
-            this.nome = null;
-            this.idade = 0;
-            this.titulacao = null;
+            this.Nome = null;
+            this.Idade = 0;
+            this.Titulacao = null;
         }
 
         public Professor( string nome, int idade, string titulacao)
         {
-            this.nome = nome;
-            this.idade = idade;
-            this.titulacao = titulacao;
+            this.Nome = nome;
+            this.Idade = idade;
+            this.Titulacao = titulacao;
         }
 
         public string titulacao
@@ -32,9 +32,9 @@ namespace poo_classe_com_herança
 
         public override string ImprimeDados()
         {
-           String s = String Empty;
-           s = String.Concat(this.Nome," ", this.Idade)
-               
+           String s = String.Empty;
+            s = String.Concat(this.Nome, " ", this.Idade.ToString(), " ", this.Titulacao);
+            return s;
         }
     }
 }
